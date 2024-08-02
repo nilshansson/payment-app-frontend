@@ -19,11 +19,5 @@ jobs:
       - name: "Set region for Cloud Run"
         run: "gcloud config set run/region us-central1"
 
-      - name: "Run payment-app-frontend"
-        run: "gcloud run deploy warehouseapp --source . --allow-unauthenticated"
-
-      - name: "Set region for Cloud Run"
-        run: "gcloud config set run/region us-central1"
-
-      - name: "Run payment-app-frontend"
-        run: "gcloud run deploy payment-app-frontend --source . --allow-unauthenticated"
+      - name: "Run car-app-frontend"
+        run: "gcloud run deploy car-app-frontend --source . --allow-unauthenticated"
